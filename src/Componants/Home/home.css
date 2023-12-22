@@ -1,0 +1,138 @@
+.home--container {
+  display: grid;
+  grid-template-areas:
+    "buisness buisness tutorial streaming"
+    "buisness buisness tutorial register";
+  grid-gap: 20px;
+}
+@media (max-width: 1100px) {
+  .home--container {
+    display: grid;
+    grid-template-areas:
+      "buisness  tutorial "
+      "buisness  tutorial "
+      "register streaming";
+    grid-gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .home--container {
+    display: grid;
+    grid-template-areas:
+      "buisness buisness "
+      "buisness buisness "
+      "tutorial tutorial "
+      "register  register"
+      "streaming  streaming";
+    grid-gap: 20px;
+  }
+}
+.home--buisness {
+  grid-area: buisness;
+  min-height: 550px;
+  padding: 1.5rem;
+  background: url(../../Assets/buisness-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--light-color);
+  position: relative;
+  z-index: -10;
+}
+.home--buisness::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 30px;
+  background: linear-gradient(to top, #000000 0%, transparent 50%);
+  opacity: 0.8;
+  z-index: -100;
+}
+@media (max-width: 767px) {
+  .buisness__content p {
+    font-size: 14px;
+  }
+}
+.home--tutorial {
+  grid-area: tutorial;
+  background-color: var(--second-color);
+  border-radius: 30px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.home--tutorial i {
+  color: var(--light-color);
+  margin: 0 auto;
+  font-size: 200px;
+  cursor: pointer;
+}
+.home--tutorial .tutorial__title {
+  color: var(--light-color);
+  font-size: 34px;
+}
+.home--streaming {
+  grid-area: streaming;
+  border-radius: 30px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--green-color);
+  color: var(--light-color);
+}
+.home--register-users p a,
+.home--streaming .streamig__content p a {
+  color: var(--light-color);
+  transition: 0.3s;
+  text-decoration: underline;
+}
+.home--register-users p a:hover,
+.home--streaming .streamig__content p a:hover {
+  color: var(--second-color);
+}
+.home--streaming .streamig__content .streaming__title {
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+.home--register-users {
+  grid-area: register;
+  border-radius: 30px;
+  padding: 1.5rem;
+  background-color: #000;
+  color: var(--light-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.home--register-users .head {
+  font-size: 40px;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.home--register-users .head i {
+  font-size: 32px;
+  margin-left: 10px;
+}
+.home--register-users p a {
+  margin: 0 5px;
+}
+@media screen and (max-width: 767px) {
+  .home--container {
+    display: grid;
+    grid-template-areas:
+      "buisness buisness"
+      "buisness buisness"
+      "tutorial"
+      "register";
+    grid-gap: 20px;
+  }
+}

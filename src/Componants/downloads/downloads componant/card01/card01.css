@@ -1,0 +1,82 @@
+.downloads--card01 {
+  background-color: #eee;
+  border-radius: 30px;
+}
+.downloads--card01 .number {
+  background-color: #000;
+  color: var(--light-color);
+  border-radius: 50%;
+  font-size: 30px;
+  margin-right: 25px;
+}
+.downloads--card01 .content__header {
+  display: flex;
+  align-items: center;
+}
+.downloads--card01 .main--content__div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.card01__information {
+  width: 60%;
+  font-size: 28px;
+}
+.card01__information .informatin--download__btn {
+  background-color: #000;
+  border-radius: 30px;
+}
+.card01__information .informatin--download__btn a {
+  color: var(--light-color);
+}
+.downloads--card01 .card01__content {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+.downloads--card01 .card01__content p {
+  color: #777;
+  font-size: 14px;
+  width: 90%;
+}
+.downloads--card01 .card01__content .flying--btn {
+  padding: 2px 5px;
+  border-radius: 20px;
+  margin: 0 2px;
+  color: var(--light-color);
+  font-size: 10px;
+}
+.downloads--card01 .card01__information i {
+  margin-left: 5px;
+}
+@media (max-width: 1050px) {
+  .downloads--card01 {
+    flex-direction: column;
+  }
+  .downloads--card01 .number {
+    margin-right: auto !important;
+  }
+  .downloads--card01 .main--comtent__div {
+    flex-direction: column;
+  }
+  .downloads--card01 .card01__content {
+    flex-direction: column;
+    width: 100% !important;
+  }
+  .card01__information {
+    width: 100% !important;
+    flex-direction: column;
+  }
+  .card01__information .informatin--downloads,
+  .card01__information .informatin--size {
+    width: 100% !important;
+    font-size: 20px;
+  }
+  .card01__information .informatin--download__btn {
+    width: 100%;
+  }
+  .card01__information .informatin--download__btn a {
+    display: block;
+    text-align: center;
+  }
+}

@@ -1,0 +1,84 @@
+.downloads--card02 {
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+.downloads--card02 .number {
+  background-color: rgba(102, 51, 242, 0.1);
+  color: var(--second-color);
+  border-radius: 50%;
+  font-size: 30px;
+  margin-right: 25px;
+}
+.downloads--card02 .content__header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.downloads--card02 .main--content__div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.card02__information {
+  width: 60%;
+  font-size: 28px;
+}
+.card02__information .informatin--download__btn {
+  border: 1px solid var(--dark-color);
+  border-radius: 30px;
+  background-color: #fff;
+}
+.card02__information .informatin--download__btn a {
+  color: var(--dark-color);
+}
+.downloads--card02 .card02__content {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+.downloads--card02 .card02__content p {
+  color: #777;
+  font-size: 14px;
+}
+.downloads--card02 .card02__content .flying--btn {
+  padding: 2px 5px;
+  border-radius: 20px;
+  margin: 0 2px;
+  color: var(--light-color);
+  font-size: 10px;
+}
+.downloads--card02 .card02__information i {
+  margin-left: 5px;
+}
+@media (max-width: 1050px) {
+  .downloads--card02 {
+    flex-direction: column;
+  }
+  .downloads--card02 .number {
+    margin-right: auto !important;
+  }
+  .downloads--card02 .main--comtent__div {
+    flex-direction: column;
+  }
+  .downloads--card02 .card02__content {
+    flex-direction: column;
+    width: 100% !important;
+  }
+  .card02__information {
+    width: 100% !important;
+    flex-direction: column;
+  }
+  .card02__information .informatin--downloads,
+  .card02__information .informatin--size {
+    width: 100% !important;
+    font-size: 20px;
+  }
+  .card02__information .informatin--download__btn {
+    width: 100%;
+  }
+  .card02__information .informatin--download__btn a {
+    display: block;
+    text-align: center;
+  }
+}

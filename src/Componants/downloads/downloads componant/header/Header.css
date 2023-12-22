@@ -1,0 +1,24 @@
+.download--header {
+  color: #777;
+}
+@media (max-width: 1040px) {
+  .download--header .header__right {
+    width: 100%;
+  }
+  .download--header .header__left {
+    width: 0;
+  }
+}
+.download--header .header__left {
+  width: 60%;
+}
+.download--header a {
+  text-decoration: underline;
+  color: var(--dark-color);
+}
+.download--header .header__right span {
+  background-color: rgba(102, 51, 242, 0.3);
+  border-radius: 30px;
+  margin-left: 10px;
+  color: var(--second-color);
+}

@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: tahoma, sans-serif;
+  scroll-behavior: smooth;
+}
+:root {
+  --green-color: #25ae60;
+  --second-color: #6633f2;
+  --dark-color: #353535;
+  --light-color: #ffffff;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+}
+
+.bg-purple {
+  background-color: var(--second-color);
+}
+.bg-orange {
+  background-color: #f46a45;
+}
+.holder {
+  padding: 15px 30px;
+}
+.c-gray {
+  color: #777;
+  font-weight: normal;
+}
+/* Start Componants */
+.flex-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header--shadow {
+  padding: 5px 20px;
+  background-color: rgb(255 255 255 / 50%);
+  border-radius: 34px;
+  width: fit-content;
+  color: var(--dark-color);
+}
+@media screen and (max-width: 767px) {
+  .mobile-hide {
+    display: none;
+  }
+}
+@media screen and (min-width: 767px) {
+  .desktop-hide {
+    display: none;
+  }
+}
+@media (max-width: 1040px) {
+  .tab-hide {
+    display: none;
+  }
+}
+@media (min-width: 1041px) {
+  .tob-show {
+    display: none;
+  }
+}
+/* End Componants */
+.p-relative {
+  position: relative;
+}
