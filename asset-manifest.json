@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/appdownload/static/css/main.e0125a38.css",
+    "main.js": "/appdownload/static/js/main.16b25453.js",
+    "static/media/buisness-bg.jpg": "/appdownload/static/media/buisness-bg.9967b05a2474f5e531ff.jpg",
+    "index.html": "/appdownload/index.html",
+    "main.e0125a38.css.map": "/appdownload/static/css/main.e0125a38.css.map",
+    "main.16b25453.js.map": "/appdownload/static/js/main.16b25453.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0125a38.css",
+    "static/js/main.16b25453.js"
+  ]
+}
